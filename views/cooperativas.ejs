@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooperativas - SISTEMA BANCARIO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("./imagen/ahorro.jpg");
+            
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #5583be;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+            background-color: #8e78e0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.9);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        li {
+            padding: 15px;
+            border-bottom: 1px solid #8584c4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        li:hover {
+            background-color: #bb90dd;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 600px;
+            gap: 10px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #a972ce;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+        .nav a:hover {
+            background-color: #573f9b;
+        }
+    </style>
+</head>
+<body>
+    <h1>COOPERATIVAS DEL SISTEMA BANCARIO</h1>
+    
+    <ul>
+        <% cooperativas.forEach(cooperativa => { %>
+            <li>ID: <%= cooperativa.id %> - <%= cooperativa.nombreCoop %></li>
+        <% }); %>
+    </ul>
+    <div class="nav">
+        <a href="/">Inicio</a>
+        <a href="/usuarios">Usuarios</a>
+    </div>
+</body>
+</html>

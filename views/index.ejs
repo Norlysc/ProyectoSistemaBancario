@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SISTEMA BANCARIO</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("./imagen/ahorro.jpg");
+        background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+        margin: 0;
+        opacity: 0.9;
+      }
+      h1 {
+        color: #729ee0;
+        margin-bottom: 5%;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8); /* Sombra con desplazamiento de 2px y color negro */
+        font-weight: bold; 
+        font-size: 60px;
+      }
+      .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .menu a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #995bc2;
+        padding: 15px 30px;
+        margin: 10px 0;
+        border-radius: 28px;
+        transition: background-color 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .menu a:hover {
+        background-color: #5171b4;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+      .logo {
+    width: 150px; /* Ancho deseado de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 50%; /* Borde redondeado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9); /* Sombra */
+}
+      .footer {
+    position: absolute;
+    bottom: 0.6px;
+    width: 100%;
+    font-size: 16px;
+    color: #190422;
+    background-color: rgba(165, 125, 218, 0.6); /* Color con 70% de opacidad */
+    padding: 10px; 
+    font-weight: bold; 
+    text-align:center; 
+    position:fixed;
+ }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SISTEMA BANCARIO SOCIAL</h1>
+      <img class="logo" src="/imagen/logo-color universidad.png" alt="Logo Universidad">
+      <div class="menu">
+        <a href="/usuarios">Usuarios</a>
+        <a href="/cooperativas">Cooperativas</a>
+        
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="footer">
+      Integrantes:<br />
+      Norlys Castañeda CI. V-20.597.586<br />
+      Sarahy Ocanto C.I: 30.140.127<br />
+      Maria Molina C.I: 27.229.410<br />
+      Juan Pablo Castro C.I: 30.771.665<br />
+      Profesor: Roberto Di Michele<br />
+      Materia: Backend
+    </div>
+  </body>
+</html>
