@@ -3,8 +3,7 @@ const CuentaModel = require('../models/cuentas');
 class CuentaController {
     AñadirCuentaPrestamo(req, res) {
         const { id, usuarioId, balance, tasaInteres, fechaProximoPago } = req.body;
-        const nuevaCuenta = {id: parseInt(id), usuarioId, balance, tasaInteres, fechaProximoPago};
-
+        const nuevaCuenta = { id: parseInt(id), usuarioId, balance, tasaInteres, fechaProximoPago };
         CuentaModel.añadirCuentaPrestamo(nuevaCuenta)
             .then(results => res.status(201).json({ mensaje: 'Se ha añadido la cuenta de préstamo', cuenta: nuevaCuenta }))
             .catch(error => res.status(500).json({ error: error.message }));
