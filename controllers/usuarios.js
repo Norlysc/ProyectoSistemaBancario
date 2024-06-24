@@ -65,7 +65,7 @@ class UsuarioController {
         } else {
           res
             .status(404)
-            .json({ mensaje: "No se encontro el usuario en la base de datos" });
+            .json({ mensaje: "No se encontró el usuario en la base de datos" });
         }
       })
       .catch((error) => res.status(500).json({ error: error.message }));
