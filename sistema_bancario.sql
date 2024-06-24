@@ -94,7 +94,7 @@ INSERT INTO `usuarios` (`id`, `nombre`, `email`, `cooperativaId`) VALUES
 --
 
 --
--- Indices de la tabla `ahorros`
+-- Indices de la tabla `Ahorros`
 --
 ALTER TABLE `ahorros`
   ADD PRIMARY KEY (`id`);
